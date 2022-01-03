@@ -1,6 +1,6 @@
 # Cafeteria
 
-#Design 
+## Design 
 https://www.figma.com/file/z9HZEu49SVyclXCFftSxkG/Cafeteria-page?node-id=103%3A3
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
