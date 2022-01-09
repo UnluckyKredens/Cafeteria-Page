@@ -8,14 +8,22 @@ const routes: Routes = [
     component: MainLayoutComponent,
     children: [
       {
-        path: '',
+        path: 'dashboard',
         loadChildren: () => import("./modules/dashboard/dashboard.module").then(d => d.DashboardModule)
+      },
+      {
+        path: 'products',
+        loadChildren: () => import("./modules/products/products.module").then(p => p.ProductsModule)
+      },
+      {
+        path: 'shop',
+        loadChildren: () => import("./modules/shop/shop.module").then(s => s.ShopModule)
       }
     ]
   },
   {
     path: '**',
-    redirectTo: ''
+    redirectTo: '/dashboard'
   }
 ];
 

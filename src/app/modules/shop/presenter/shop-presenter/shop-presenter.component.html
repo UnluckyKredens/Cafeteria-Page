@@ -1,0 +1,17 @@
+<div class="container header">
+  <div class="item">
+    <img class="item__image" src="/assets/images/item.png">
+    <p class="item__name">Monson Malbar</p>
+    <div class="item__grade">
+      <mat-icon class="item__grade--star" *ngIf="grade >= 1">star</mat-icon>
+      <mat-icon class="item__grade--star" *ngIf="grade >= 2">star</mat-icon>
+      <mat-icon class="item__grade--star" *ngIf="grade >= 3">star</mat-icon>
+      <mat-icon class="item__grade--star" *ngIf="grade >= 4">star</mat-icon>
+      <mat-icon class="item__grade--star" *ngIf="grade >= 5">star</mat-icon>
+    </div>
+    <div class="item__buy">
+      <p class="item__buy--add">Add to cart</p>
+      <hr class="item__buy--borderline">
+    </div>
+  </div>
+</div>
