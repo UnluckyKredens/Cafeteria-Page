@@ -8,7 +8,7 @@ const routes: Routes = [
     component: MainLayoutComponent,
     children: [
       {
-        path: 'dashboard',
+        path: '',
         loadChildren: () => import("./modules/dashboard/dashboard.module").then(d => d.DashboardModule)
       },
       {
@@ -27,7 +27,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '/dashboard'
+    redirectTo: '/'
   }
 ];
 
